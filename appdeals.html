@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<link href="style.css" rel="stylesheet"/>
+<script src="jquery.js"></script>
+</head>
+
+<body>
+
+<h1>mon(ey)treal</h1>
+<h2>student deals, every day</h2>
+<h3>present deal within app to redeem these deals</h3>
+<div class="one">
+  <p>store<span class="deal">-10%</span><br />
+  <small>deal.</small></p>
+</div>
+<div class="two">
+  <p>store<span class="deal">-10%</span><br />
+  <small>deal.</small></p>
+</div>
+<div class="three">
+  <p>store<span class="deal">-10%</span><br />
+  <small>deal.</small></p>
+</div>
+  <div id="navigation">
+    <a href="studentdeals.html"><img src="img/id.png" width="50"></a>
+    <a href="appdeals.html"><img src="img/coupons.png" width="50"></a>
+    <a href="map.html"><img src="img/globe.png" width="50"></a>
+  </div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+</html>
