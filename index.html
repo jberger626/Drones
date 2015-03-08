@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<link href="style.css" rel="stylesheet"/>
+<script src="jquery.js"></script>
+</head>
+
+<body>
+<h1>mon(ey)treal</h1>
+<h2>student deals, every day</h2>
+<h3>deals available upon presentation of student id</h3>
+<div class="first">
+  <p>sushi crescent <span class="deal">-10%</span><br />
+  <small>Monday-Wednesday, receive 10% off upon presentation of your student ID. Note: usage of deal requires cash-only transaction.</small></p>
+</div>
+
+<div class="second">
+  <p>provigo <span class="deal">-10% + $1 delivery</span><br />
+  <small>Monday-Wednesday, receive 10% off upon presentation of your student ID. In addition, students can get groceries delivered for $1 (tip not included).</small></p>
+</div>
+
+<div class="fourth">
+  <p>metro <span class="deal">-10%</span><br />
+  <small>Monday-Wednesday, receive 10% off a $50+ purchase upon presentation of your student ID. </small></p>
+</div>
+
+<div class="third">
+  <p>pizza navona <span class="deal">-10%</span><br />
+  <small>McGill students can receive 10% off upon presentation of their student ID.</small></p>
+</div>
+
+<div class="fifth">
+  <p>cafe java u<span class="deal">-10%</span><br />
+  <small>McGill students can receive 10% off upon presentation of their student ID.</small></p>
+</div>
+  <div id="navigation">
+    <a href="studentdeals.html"><img src="img/id.png" width="50"></a>
+    <a href="appdeals.html"><img src="img/coupons.png" width="50"></a>
+    <a href="map.html"><img src="img/globe.png" width="50"></a>
+  </div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+</html>
